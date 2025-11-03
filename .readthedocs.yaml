@@ -1,0 +1,15 @@
+# .readthedocs.yaml
+version: 2
+
+# Build configuration
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+
+python:
+  install:
+    - requirements: requirements.txt   # Sphinx and RTD dependencies
+
+sphinx:
+  configuration: conf.py                 # path is relative to repo root
